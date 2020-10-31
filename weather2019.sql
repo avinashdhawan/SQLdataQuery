@@ -1,46 +1,46 @@
 DROP TABLE weather2019;
-Total Precip (mm)	Snow on Grnd (cm)	Dir of Max Gust (10s deg)	Spd of Max Gust (km/h)
+DROP TABLE weather2020;
 
 CREATE TABLE weather2019 (
-	long DECIMAL(3,2)
-	lat DECIMAL(3,2)
-	station VARCHAR()
+	long DECIMAL(5,2),
+	lat DECIMAL(5,2),
+	station VARCHAR(20),
 	date VARCHAR(10) NOT NULL,
     year VARCHAR   NOT NULL,
     month INT NOT NULL,
 	day INT NOT NULL,
-	heatdays DECIMAL(3,1),
-	cooldays DECIMAL(3,1),
-	maxtemp DECIMAL(3,1),
-	mintemp DECIMAL(3,1),
-	meantemp DECIMAL(3,1),
-	precip	DECIMAL(3,1),
-	rain	DECIMAL(3,1),
-	snowfall DECIMAL(3,1),
-	snowongrd	DECIMAL(3,1)
-	winddir DECIMAL(3,1)
-	windspeed DECIMAL(3,1)
+	heatdays DECIMAL(4,1),
+	cooldays DECIMAL(4,1),
+	maxtemp DECIMAL(4,1),
+	mintemp DECIMAL(4,1),
+	meantemp DECIMAL(4,1),
+	precip	DECIMAL(4,1),
+	rain	DECIMAL(4,1),
+	snowfall DECIMAL(4,1),
+	snowongrd	DECIMAL(4,1),
+	winddir DECIMAL(4,1),
+	windspeed DECIMAL(4,1)
 	);
 	
 CREATE TABLE weather2020 (
-	long DECIMAL(3,2)
-	lat DECIMAL(3,2)
-	station VARCHAR()
+	long DECIMAL(5,2),
+	lat DECIMAL(5,2),
+	station VARCHAR(20),
 	date VARCHAR(10) NOT NULL,
     year VARCHAR   NOT NULL,
     month INT NOT NULL,
 	day INT NOT NULL,
-	heatdays DECIMAL(3,1),
-	cooldays DECIMAL(3,1),
-	maxtemp DECIMAL(3,1),
-	mintemp DECIMAL(3,1),
-	meantemp DECIMAL(3,1),
-	precip	DECIMAL(3,1),
-	rain	DECIMAL(3,1),
-	snowfall DECIMAL(3,1),
-	snowongrd	DECIMAL(3,1)
-	winddir DECIMAL(3,1)
-	windspeed DECIMAL(3,1)
+	heatdays DECIMAL(4,1),
+	cooldays DECIMAL(4,1),
+	maxtemp DECIMAL(4,1),
+	mintemp DECIMAL(4,1),
+	meantemp DECIMAL(4,1),
+	precip	DECIMAL(4,1),
+	rain	DECIMAL(4,1),
+	snowfall DECIMAL(4,1),
+	snowongrd	DECIMAL(4,1),
+	winddir DECIMAL(4,1),
+	windspeed DECIMAL(4,1)
 	);
 	
 SELECT * FROM weather2019;
